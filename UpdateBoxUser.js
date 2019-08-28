@@ -2,7 +2,7 @@ var BoxSDK = require('box-node-sdk');
 var jsonConfig = require('');//Your configfile.json  goes here....
 var sdk = BoxSDK.getPreconfiguredInstance(jsonConfig);
 var Excel = require('exceljs');
-var serviceAccountClient = sdk.getAppAuthClient('enterprise', '33673038');
+var serviceAccountClient = sdk.getAppAuthClient('enterprise', '');//Put enterprise id from your config file
 var log4js = require( "log4js" );
 log4js.configure( "./config/log4jsconfig.json" );
 var logger = log4js.getLogger( "file" );
